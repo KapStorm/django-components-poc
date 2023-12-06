@@ -1,0 +1,24 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    {% tailwind_css %}
+</head>
+<body class="w-10/12 mx-auto">
+<h1>Hello Django in Users App</h1>
+<div class="flex gap-4">
+    {% for user in users %}
+        {% component "card-tailwind" user %}
+    {% endfor %}
+</div>
+<h3>Click any icon</h3>
+<div class="flex">
+    {% for icon in icons %}
+        {% component "icon-tailwind" icon.name icon.img_url %}
+    {% endfor %}
+</div>
+{% component_js_dependencies %}
+</body>
+</html>
