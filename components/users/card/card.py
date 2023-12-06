@@ -11,4 +11,4 @@ class CardComponent(component.Component):
         }
 
     class Media:
-        css = 'users/card/style.css'
+        css = 'users/card/card.css'

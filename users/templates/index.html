@@ -7,10 +7,17 @@
 </head>
 <body>
 <h1>Hello Django in Users App</h1>
-<div style="display: flex; gap: 8px;">
+<div style="display: flex; gap: 8px; max-width: 50%">
     {% for user in users %}
         {% component "card" user %}
     {% endfor %}
 </div>
+<h3>Click any icon</h3>
+<div style="display: flex">
+    {% for icon in icons %}
+        {% component "icon" icon.name icon.img_url %}
+    {% endfor %}
+</div>
+{% component_js_dependencies %}
 </body>
 </html>
