@@ -1,6 +1,6 @@
 # PoC django-components and django-tailwind
 
-This is a proof of concept for using [django-components](https://github.com/EmilStenstrom/django-components) and [django-tailwind](https://github.com/timonweb/django-tailwind/).
+This is a proof of concept using [django](https://www.djangoproject.com/), [django-components](https://github.com/EmilStenstrom/django-components) and [django-tailwind](https://github.com/timonweb/django-tailwind/).
 
 ## How to run
 - Create a virtual environment and install the requirements
