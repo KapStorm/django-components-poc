@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django_components',
     'tailwind',
     'theme',
-    'django_components.safer_staticfiles'
+    'django_components.safer_staticfiles',
+    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware'
 ]
 
 ROOT_URLCONF = 'poc_components.urls'
