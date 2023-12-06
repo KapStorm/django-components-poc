@@ -3,7 +3,7 @@ from django_components import component
 
 @component.register('card')
 class CardComponent(component.Component):
-    template_name = 'users/card/card.html'
+    template_name = 'card/card.html'
 
     def get_context_data(self, user):
         return {
@@ -11,4 +11,4 @@ class CardComponent(component.Component):
         }
 
     class Media:
-        css = 'users/card/card.css'
+        css = 'card/card.css'

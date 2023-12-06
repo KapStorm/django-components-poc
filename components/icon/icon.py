@@ -3,7 +3,7 @@ from django_components import component
 
 @component.register('icon')
 class IconComponent(component.Component):
-    template_name = 'users/icon/icon.html'
+    template_name = 'icon/icon.html'
 
     def get_context_data(self, name, img_url):
         return {
@@ -12,5 +12,5 @@ class IconComponent(component.Component):
         }
 
     class Media:
-        css = 'users/icon/icon.css'
-        js = 'users/icon/icon.js'
+        css = 'icon/icon.css'
+        js = 'icon/icon.js'
